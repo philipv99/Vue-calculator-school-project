@@ -10,6 +10,46 @@
 </head>
 <body>
    
+   <header>
+      <section class="bg-info overflow-hidden py-3">
+         <div class="container">
+            <h1 class="display-3">Calculator</h1>
+         </div>
+      </section>
+   </header>
+
+   <main id="app">
+      <section class="py-5">
+         <div class="container d-flex justify-content-center fs-4">
+            <input class="text-center" v-model.number="number1" type="number">
+            <select class="dropdown mx-4 py-3 px-4" name="operation" v-model="operation">
+               <option value="1">+</option>
+               <option value="2">-</option>
+               <option value="3">*</option>
+               <option value="4">/</option>
+               <option value="5">^</option>
+            </select>
+            <input class="text-center" v-model.number="number2" type="number">
+         </div>
+         <div class="container py-4 d-flex">
+            <button class="btn btn-info fw-bold p-4 fs-4 text-white mx-auto" @click="calcNumbers()">calculat</button>
+         </div>
+         <div class="container d-flex">
+            <h2 class="display-5">{{result}}</h2>
+         </div>
+      </section>c
+   </main>
+
+   <footer>
+      <section class="bg-secondary py-3 text-light">
+         <div class="container">
+            <h3 class="display-4">School prog.</h3>
+            <p class="">this is a little School thin to learn Vue.js</p>
+         </div>
+      </section>
+   </footer>
+
+
    <script src="./index.js"></script>
 </body>
 </html>
