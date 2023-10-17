@@ -22,8 +22,7 @@ Vue.createApp({
             this.result = this.number1 / this.number2 
          }
          if (this.operation == 5){
-            this.result = this.number1 ^ this.number2
-            Math.pow() 
+            this.result = Math.pow(this.number1, this.number2)
          }
       }
    }
